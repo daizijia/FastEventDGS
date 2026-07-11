@@ -1,4 +1,4 @@
-# FastEventDGS (Coming soon)
+# FastEventDGS
 The implementation of the paper "FastEventDGS: Deformable Gaussian Splatting for Fast Dynamic Scenes from a Single Event Camera"(CVPR2026).
 
 ## Installation
@@ -14,7 +14,7 @@ The implementation of the paper "FastEventDGS: Deformable Gaussian Splatting for
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd De3GS
+   cd FastEventDGS
    ```
 
 2. Install Python dependencies:
