@@ -1,0 +1,104 @@
+# requirements.txt
+# Generated from Conda environment file
+# Use with: pip install -r requirements.txt
+# Note: Ensure you have a compatible Python version (e.g., 3.10) installed.
+# System libraries (like CUDA drivers for torch+cu118) must be installed separately.
+
+asttokens==3.0.0
+# bzip2 is a system library, not installed via pip
+# ca-certificates are managed by the system/pip/conda, not usually listed here
+certifi==2022.12.7
+charset-normalizer==2.1.1
+comm==0.2.2
+contourpy==1.3.1
+cycler==0.12.1
+dearpygui==2.0.0
+debugpy==1.8.11
+decorator==5.2.1
+diff-gaussian-rasterization==0.0.0
+entrypoints==0.4
+# esim-py seems specific, keeping it
+esim-py==0.0.1
+# esim-torch seems specific, keeping it
+esim-torch==0.0.0
+exceptiongroup==1.2.2
+executing==2.1.0
+filelock==3.13.1
+fonttools==4.56.0
+fsspec==2024.6.1
+idna==3.4
+imageio==2.27.0
+imageio-ffmpeg==0.6.0
+ipykernel==6.29.5
+ipython==8.33.0
+jedi==0.19.2
+jinja2==3.1.4
+jupyter_client==7.3.4
+jupyter_core==5.7.2
+kiwisolver==1.4.8
+# ld_impl_linux-64 is a system linker
+# libffi is a system library
+# libgcc-ng is a system library
+# libgomp is a system library
+# libsodium is a system library
+# libstdcxx-ng is a system library
+# libuuid is a system library
+lpips==0.1.4
+markupsafe==2.1.5
+matplotlib==3.10.1
+matplotlib-inline==0.1.7
+mpmath==1.3.0
+# ncurses is a system library
+nest-asyncio==1.6.0
+networkx==3.3
+numpy==1.26.0
+nvidia-ml-py==12.570.86
+nvitop==1.4.2
+opencv-python==4.11.0.86
+# openssl is a system library
+packaging==24.2
+parso==0.8.4
+pexpect==4.9.0
+pickleshare==0.7.5
+pillow==11.1.0
+pip==25.0
+platformdirs==4.3.6
+plyfile==0.8.1
+prompt-toolkit==3.0.50
+psutil==5.9.0
+ptyprocess==0.7.0
+pure_eval==0.2.3
+pybind11==2.13.6
+pybind11-global==2.13.6
+pygments==2.19.1
+pyparsing==3.2.1
+# python itself is not installed via pip requirements
+python-dateutil==2.9.0.post0
+# python_abi is a conda meta-package
+pyzmq==26.2.0
+# readline is a system library
+requests==2.28.1
+scipy==1.15.2
+setuptools==75.8.0
+# simple-knn seems specific, keeping it
+simple-knn==0.0.0
+six==1.17.0
+# sqlite is a system library
+stack_data==0.6.3
+sympy==1.13.1
+# tk is a system library
+torch==2.1.0+cu118
+torchaudio==2.1.0+cu118
+torchvision==0.16.0+cu118
+tornado==6.1
+tqdm==4.67.1
+traitlets==5.14.3
+triton==2.1.0
+typing_extensions==4.12.2
+# tzdata is often managed by other packages or the system
+urllib3==1.26.13
+wcwidth==0.2.13
+wheel==0.45.1
+# xz is a system library
+# zeromq is a system library, pyzmq is the python binding
+# zlib is a system library
