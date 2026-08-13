@@ -1,6 +1,34 @@
 # FastEventDGS
 The implementation of the paper "FastEventDGS: Deformable Gaussian Splatting for Fast Dynamic Scenes from a Single Event Camera"(CVPR2026).
 
+## Dataset
+Download link: https://drive.google.com/file/d/1xn_E52JvO3oH8Sgy-GO1KP6UHjV75TsO/view?usp=sharing
+
+Note that we added two additional datasets (fan and strawberry) from Blender Event. While our algorithm currently performs suboptimally on them, they offer intriguing challenges that we encourage the community to tackle.
+
+### Dataset Structure (Blender Event)
+
+```
+<scene>/
+├── cam_transforms.json     # Camera transforms with timestamps
+├── events.npy              # (or events/ dir with .npz files)
+├── imgs/                   # Ground truth images
+├── points3d.ply            # Initial point cloud
+└── K.yaml                  # Camera intrinsics (for real event)
+```
+
+### Dataset Structure (Real Event)
+
+```
+<scene>/
+├── events_rectified.npy    # Events [t, x, y, p]
+├── llff/
+│   ├── all_poses_bounds.npy
+│   └── all_timestamps.npy
+├── rectify_mask.npy        # Lens rectification mask
+├── K.yaml                  # Camera intrinsics
+└── points3d.ply
+```
 ## Installation
 
 ### Prerequisites
@@ -36,37 +64,6 @@ The implementation of the paper "FastEventDGS: Deformable Gaussian Splatting for
    ```
 
 4. (Optional) Install [esim-torch](https://github.com/uzh-rpg/esim_torch) and [rpg_vid2e](https://github.com/uzh-rpg/rpg_vid2e) for synthetic event generation from videos.
-
-## Supported Datasets
-
-| Format | Detection File | Description |
-|--------|---------------|-------------|
-| **Blender Event** | `cam_transforms.json` | Synthetic Blender event camera dataset |
-| **Real Event** | `events_rectified.npy` | Real-world event camera dataset |
-
-### Dataset Structure (Blender Event)
-
-```
-<scene>/
-├── cam_transforms.json     # Camera transforms with timestamps
-├── events.npy              # (or events/ dir with .npz files)
-├── imgs/                   # Ground truth images
-├── points3d.ply            # Initial point cloud
-└── K.yaml                  # Camera intrinsics (for real event)
-```
-
-### Dataset Structure (Real Event)
-
-```
-<scene>/
-├── events_rectified.npy    # Events [t, x, y, p]
-├── llff/
-│   ├── all_poses_bounds.npy
-│   └── all_timestamps.npy
-├── rectify_mask.npy        # Lens rectification mask
-├── K.yaml                  # Camera intrinsics
-└── points3d.ply
-```
 
 ## Usage
 
@@ -112,7 +109,7 @@ The event camera contrast thresholds can be tuned:
 | `--use_spline` | Enable B-spline continuous-time camera trajectory (default: True) |
 | `--use_contrast` | Enable event flow/warp contrast loss |
 | `--use_motion` | Enable event motion consistency loss |
-| `--use_depth` | Enable VGGT depth supervision |
+| `--use_depth` | Enable VGGT depth supervision (Note: If running into OOM errors, you can swap VGGT for a more memory-friendly depth estimator like DA3.)| 
 
 ## Monitoring
 
@@ -128,7 +125,7 @@ This project builds upon the following works:
 
 - [3D Gaussian Splatting](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/) — Kerbl et al., SIGGRAPH 2023
 - [Deformable 3D Gaussians](https://github.com/ingra14m/Deformable-3DGS) — Yang et al.
-- [VGGT](https://github.com/facebookresearch/vggt) — Wang et al.
+- [VGGT](https://github.com/facebookresearch/vggt) — Wang et al. 
 - [esim_torch](https://github.com/uzh-rpg/esim_torch) — RPG Group, University of Zurich
 
 ## License
