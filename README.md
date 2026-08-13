@@ -1,6 +1,8 @@
 # FastEventDGS
 The implementation of the paper "FastEventDGS: Deformable Gaussian Splatting for Fast Dynamic Scenes from a Single Event Camera"(CVPR2026).
 
+Video link: https://www.youtube.com/watch?v=2hhs8y3z2RU
+
 ## Dataset
 Download link: https://drive.google.com/file/d/1xn_E52JvO3oH8Sgy-GO1KP6UHjV75TsO/view?usp=sharing
 
