@@ -3,6 +3,11 @@ The implementation of the paper "FastEventDGS: Deformable Gaussian Splatting for
 
 Video link: https://www.youtube.com/watch?v=2hhs8y3z2RU
 
+TODO：
+
+- [ ] clean code
+- [ ] split parameter for different dataset
+      
 ## Dataset
 Download link: https://drive.google.com/file/d/1xn_E52JvO3oH8Sgy-GO1KP6UHjV75TsO/view?usp=sharing
 
