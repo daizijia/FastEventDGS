@@ -8,19 +8,6 @@ TODO：
 - [ ] clean code
 - [ ] split parameter for different dataset
 
-### Citation
-
-If you find FastEventDGS useful for your research, please consider citing our paper:
-
-```bibtex
-@inproceedings{dai2026fasteventdgs,
-  title={FastEventDGS: Deformable Gaussian Splatting for Fast Dynamic Scenes from a Single Event Camera},
-  author={Dai, Zijia and Messikommer, Nico and Zou, Rong and Zubic, Nikola and Scaramuzza, Davide and Kneip, Laurent},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  pages={29537--29546},
-  year={2026}
-}
-
 ## Dataset
 Download link: https://drive.google.com/file/d/1xn_E52JvO3oH8Sgy-GO1KP6UHjV75TsO/view?usp=sharing
 
@@ -147,6 +134,25 @@ This project builds upon the following works:
 - [Deformable 3D Gaussians](https://github.com/ingra14m/Deformable-3DGS) — Yang et al.
 - [VGGT](https://github.com/facebookresearch/vggt) — Wang et al. 
 - [esim_torch](https://github.com/uzh-rpg/esim_torch) — RPG Group, University of Zurich
+
+
+## Citation
+
+If you find FastEventDGS useful for your research, please consider citing our paper:
+
+**FastEventDGS: Deformable Gaussian Splatting for Fast Dynamic Scenes from a Single Event Camera**  
+Zijia Dai, Nico Messikommer, Rong Zou, Nikola Zubic, Davide Scaramuzza, Laurent Kneip  
+*IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026*
+
+```bibtex
+@inproceedings{dai2026fasteventdgs,
+  title={FastEventDGS: Deformable Gaussian Splatting for Fast Dynamic Scenes from a Single Event Camera},
+  author={Dai, Zijia and Messikommer, Nico and Zou, Rong and Zubic, Nikola and Scaramuzza, Davide and Kneip, Laurent},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages={29537--29546},
+  year={2026}
+}
+```
 
 ## License
 
